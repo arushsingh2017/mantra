@@ -1,0 +1,48 @@
+
+
+<link href="/Content/CSS/User/BookingList/b2bheader.css?v=636711419726627851" rel="stylesheet" />
+
+<link href="/Content/CSS/themes/jquery.ui.datepicker.css?v=636490425933074891" rel="stylesheet" />
+
+
+<link href="/Content/CSS/themes/jquery.ui.theme.css?v=636490425933765372" rel="stylesheet" />
+
+<link href="/Content/CSS/User/BookingList/jquery.ui.all.css?v=636490425954332268" rel="stylesheet" />
+
+
+<link href="//code.jquery.com/ui/1.8.24/themes/base/jquery-ui.css" rel="stylesheet" />
+
+<script src="//code.jquery.com/jquery-1.8.2.js"></script>
+
+<script src="//code.jquery.com/ui/1.8.24/jquery-ui.js"></script>
+
+<!--<link href="/Content/CSS/User/BookingList/bkngList.css?v=636627649801455782" rel="stylesheet" />
+<link href="/Content/CSS/User/BookingList/b2b-pop.css?v=636744395968791851" rel="stylesheet" />
+<script src="/Scripts/Corporate/Admin/Crp_jsAdmin.js"></script> -->
+
+
+
+<div id="divPrintTicket">
+</div>
+<script>
+    var _tid = window.location.search.substring(1).split("=")[1];
+	if(_tid.includes("&"))
+	{
+	_tid=_tid.split('&')[0];
+	}
+    $.ajax({
+        type: "POST",
+        url: "/TrainBookingList/trainPrint",
+        // data: Data,
+        contentType: 'application/json; charset=utf-8',
+        data: "{'TranscationId':'" + _tid + "'}",
+        datatype: "json",
+        success: function (result) {
+            document.getElementById("divPrintTicket").innerHTML = result;
+        },
+        error: function (result) {
+
+        }
+    });
+</script>
+

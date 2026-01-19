@@ -1,0 +1,26 @@
+ {
+        "sec1": [
+            {
+                "k": "name",
+                "v": "Manish Singh"
+            },
+            {
+                "k": "age",
+                "v": "28"
+            }
+        ],
+        "sec2": [
+            {
+                "k": "mobile1",
+                "v": "city"
+            },
+            {
+                "k": "location1",
+                "v": "Noida"
+            },
+            {
+                "k": "location",
+                "v": "Noida"
+            }
+        ]
+    }

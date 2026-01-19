@@ -1,0 +1,99 @@
+:root {
+  --ms-body-font-family: "Poppins", sans-serif !important;
+  --ms-body-font-optical-sizing: auto;
+  --ms-body-font-style: normal;
+  --ms-secondary-font-family: "Poppins", sans-serif;
+
+  /* bg color variable */
+  --ms-bg-primary: #1EBDDA;
+  --ms-bg-secondary: #235496;
+  --ms-bg-success: #BED1FC;
+  --ms-bg-warning: #FFC93A;
+  --ms-bg-danger: #FF4C51;
+  --ms-bg-gray: #E4E4E6;
+  --ms-bg-white: #ffffff;
+  --ms-bg-black: #000000;
+  --ms-bg-g-color1: #ef3c443b;
+  --ms-bg-g-color2: #297dc282;
+
+
+
+  /* text color variable */
+  --ms-text-color-primary: #1EBDDA;
+  --ms-text-color-secondary: #235496;
+  --ms-text-color-white: #ffffff;
+  --ms-text-black: #000000;
+
+  /* font-faimly */
+--ms-font-family-primary: "Roboto" !important;
+
+
+  /* p{
+    font-family: var(--ms-font-family-primary);
+    font-size: 20px !important;
+    letter-spacing: 1.2px;
+  } */
+
+}
+
+body {
+  font-family: var(--ms-body-font-family) !important;
+  font-optical-sizing: var(--ms-body-font-optical-sizing);
+  font-style: var(--ms-body-font-style);
+  background-color: var(--ms-bg-white);
+  color: var(--ms-text-black);
+}
+
+h1{
+    font-family: var();
+}
+
+.tag, .tag-sky{
+    position: relative;
+}
+
+.tag:before {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    content: '';
+}
+.tag::after{
+    position: absolute;
+    top: 17px;
+    left: 26px;
+    width: 35px;
+    height: 6px;
+    background: #fff;
+    content: '';
+}
+
+.tag-sky:before {
+    width: 6px;
+    height: 6px;
+    background:#1EBDDA;
+    content: '';
+}
+.tag-sky::after{
+    position: absolute;
+    top: 17px;
+    left: 26px;
+    width: 35px;
+    height: 6px;
+    background: #1EBDDA;
+    content: '';
+}
+
+.shap-icon:before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #0084d1;
+    content: '';
+    top: 35px;
+    right: -10px;
+    transform: rotate(45deg);
+}
+.shap-icon {
+    position: relative;
+}
