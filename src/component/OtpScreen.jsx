@@ -1,9 +1,15 @@
 import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 
 export default function OtpScreen() {
     const [otp, setOtp] = useState(["", "", "", ""]);
     const inputs = useRef([]);
+    const navigate= useNavigate()
+    const handleVerify=()=>{
+        navigate('/loan-eligibility')
+    }
 
     const handleChange = (value, index) => {
         if (!/^\d?$/.test(value)) return;
@@ -24,13 +30,13 @@ export default function OtpScreen() {
     };
     return (
         <>
-            <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-                <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-6 sm:p-8">
+            <div className=" flex items-center justify-center px-4">
+                <div className="w-full max-w-md p-6 sm:p-8">
 
                     <h2 className="text-2xl font-bold text-center mb-2">
                         Verify OTP
                     </h2>
-                    <p className="text-sm text-gray-600 text-center mb-6">
+                    <p className="text-sm text-center mb-6">
                         Enter the 4-digit OTP sent to your mobile number
                     </p>
 
@@ -52,14 +58,15 @@ export default function OtpScreen() {
                     </div>
 
                     {/* VERIFY BUTTON */}
-                    <button className="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 rounded-lg transition">
+                    <button className="w-full bg-emerald-500  hover:bg-emerald-600 text-white font-semibold py-3 rounded-lg transition"
+                    onClick={handleVerify}>
                         Verify OTP
                     </button>
 
                     {/* RESEND */}
-                    <p className="text-center text-sm text-gray-500 mt-4">
+                    <p className="text-center text-sm  mt-4">
                         Didn’t receive OTP?{" "}
-                        <button className="text-sky-600 hover:underline font-medium">
+                        <button className="text-black hover:underline font-medium">
                             Resend
                         </button>
                     </p>

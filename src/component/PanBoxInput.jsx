@@ -4,11 +4,19 @@ import { Input } from "postcss";
 import { useRef, useState } from "react";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import { useNavigate } from "react-router-dom";
 
 export default function PanBoxInput() {
     const [pan, setPan] = useState(Array(10).fill(""));
     const [error, setError] = useState("");
     const inputsRef = useRef([]);
+
+    const navigate = useNavigate()
+
+    const handlecheckEligiblity = () => {
+        navigate('/loan-application')
+
+    }
 
     const panRegex = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
 
@@ -117,7 +125,7 @@ export default function PanBoxInput() {
                     <label className="flex items-center text-sm gap-2 cursor-pointer">
                         <input
                             type="radio"
-                            name="empType"                            
+                            name="empType"
                             className="accent-sky-600"
                         />
                         <span>Salaried</span>
@@ -126,14 +134,14 @@ export default function PanBoxInput() {
                     <label className="flex items-center text-sm gap-2 cursor-pointer">
                         <input
                             type="radio"
-                            name="empType"                           
+                            name="empType"
                             className="accent-sky-600"
                         />
                         <span>Self-Employed</span>
                     </label>
                 </div>
 
-                 <div className="pt-3">
+                <div className="pt-3">
                     <label className="text-sm font-medium mb-1"> Mode of Salary  Received * </label>
                 </div>
 
@@ -166,10 +174,10 @@ export default function PanBoxInput() {
                 </div>
 
 
-                <button                   
+                <button
                     className="w-full mt-10 bg-emerald-500 hover:bg-emerald-700 text-white
                    font-semibold py-3 rounded-lg transition uppercase"
-                >
+                    onClick={handlecheckEligiblity}>
                     Check Eligiblity
                 </button>
             </div>

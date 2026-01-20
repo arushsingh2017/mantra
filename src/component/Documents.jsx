@@ -3,11 +3,18 @@ import DocumentUploadCard from './DocumentUploadCard'
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 // import addImg from '../assets/website/11.svg'
 import addImg from '../assets/website/upload.mp4'
+import { useNavigate } from "react-router-dom";
+
 
 
 export default function Documents() {
     const fileRef = useRef(null);
     const [file, setFile] = useState(null);
+    const navigate = useNavigate()
+
+    const handleUpload=()=>{
+        navigate('/thankyou')
+    }
 
     const handleClick = () => {
         fileRef.current.click();
@@ -188,7 +195,9 @@ export default function Documents() {
                     </div>
                     <div className="mt-6">
                         <button className="w-full  bg-emerald-500 hover:bg-emerald-700 text-white
-                   font-semibold py-3 rounded-lg transition uppercase">Continue Application</button>
+                   font-semibold py-3 rounded-lg transition uppercase" onClick={handleUpload}
+                   
+                   >Continue Application</button>
                     </div>
                 </div>
                 <div className="lg:col-span-4 p-2">

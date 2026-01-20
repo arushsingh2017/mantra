@@ -25,12 +25,12 @@ export default function LoanApplication() {
             shortdis: 'Please enter your PAN Card number. Your identity is secure with us.',
             content: <Documents/>
         },
-        {
-            id: 4,
-            stepname: "Bank Details",
-            shortdis: 'Please enter your PAN Card number. Your identity is secure with us.',
-            content: "Account & IFSC verification"
-        },
+        // {
+        //     id: 4,
+        //     stepname: "Bank Details",
+        //     shortdis: 'Please enter your PAN Card number. Your identity is secure with us.',
+        //     content: "Account & IFSC verification"
+        // },
 
     ];
 

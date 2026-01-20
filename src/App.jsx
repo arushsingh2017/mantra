@@ -13,6 +13,7 @@ import AboutUs from './pages/AboutUs';
 import RepayLoan from './pages/RepayLoan';
 import ContactUs from './pages/ContactUs';
 import FaqsPages from './pages/FaqsPages';
+import OtpVerify from './pages/OtpVerify';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
    
        <Routes>
         <Route path='apply-now' element={<ApplyNow/>}></Route>
+        <Route path='/otp-verify' element={<OtpVerify/>}></Route>
         
         
        <Route path='/' element={<Home/>}> </Route>
