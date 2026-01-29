@@ -14,6 +14,7 @@ import RepayLoan from './pages/RepayLoan';
 import ContactUs from './pages/ContactUs';
 import FaqsPages from './pages/FaqsPages';
 import OtpVerify from './pages/OtpVerify';
+import Dashboard from './pages/Dashboard';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
        <Route path='loan-eligibility' element={<LoanEligibility/>}></Route>
        <Route path='loan-application' element={<LoanApplication/>}></Route>
        <Route path='thankyou' element={<Thanks/>}></Route>
+       <Route path='dashboard' element={<Dashboard/>}></Route>
        
       </Routes>
 

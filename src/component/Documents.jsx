@@ -38,7 +38,7 @@ export default function Documents() {
                     <div className="flex items-center justify-between border-1 border-emerald-400 rounded-xl px-3 py-3 bg-white w-full mb-4">
                         {/* Left text */}
                         <div className="min-w-0">
-                            <p className="text-lg font-semibold text-gray-900">dfgdg1</p>
+                            <p className="text-base font-semibold">Aadhaar Front</p>
                             <p className="text-sm text-gray-400 truncate">
                                 {file ? file.name : "Upload JPG or PNG"}
                             </p>
@@ -64,7 +64,7 @@ export default function Documents() {
                     <div className="flex items-center justify-between border-1 border-emerald-400 rounded-xl px-3 py-3 bg-white w-full mb-4">
                         {/* Left text */}
                         <div className="min-w-0">
-                            <p className="text-lg font-semibold text-gray-900">dfgdg2</p>
+                            <p className="text-base font-semibold">Aadhaar Back</p>
                             <p className="text-sm text-gray-400 truncate">
                                 {file ? file.name : "Upload JPG or PNG"}
                             </p>
@@ -90,7 +90,7 @@ export default function Documents() {
                     <div className="flex items-center justify-between border-1 border-emerald-400 rounded-xl px-3 py-3 bg-white w-full mb-4">
                         {/* Left text */}
                         <div className="min-w-0">
-                            <p className="text-lg font-semibold text-gray-900">dfgdg3</p>
+                            <p className="text-base font-semibold">PAN Card</p>
                             <p className="text-sm text-gray-400 truncate">
                                 {file ? file.name : "Upload JPG or PNG"}
                             </p>
@@ -116,7 +116,7 @@ export default function Documents() {
                     <div className="flex items-center justify-between border-1 border-emerald-400 rounded-xl px-3 py-3 bg-white w-full mb-4">
                         {/* Left text */}
                         <div className="min-w-0">
-                            <p className="text-lg font-semibold text-gray-900">dfgdg4</p>
+                            <p className="text-base font-semibold">Latest Month Pay Slip</p>
                             <p className="text-sm text-gray-400 truncate">
                                 {file ? file.name : "Upload JPG or PNG"}
                             </p>
@@ -142,7 +142,7 @@ export default function Documents() {
                     <div className="flex items-center justify-between border-1 border-emerald-400 rounded-xl px-3 py-3 bg-white w-full mb-4">
                         {/* Left text */}
                         <div className="min-w-0">
-                            <p className="text-lg font-semibold text-gray-900">dfgdg5</p>
+                            <p className="text-base font-semibold">Latest 3 Months Bank Statement</p>
                             <p className="text-sm text-gray-400 truncate">
                                 {file ? file.name : "Upload JPG or PNG"}
                             </p>
@@ -168,7 +168,7 @@ export default function Documents() {
                     <div className="flex items-center justify-between border-1 border-emerald-400 rounded-xl px-3 py-3 bg-white w-full mb-4">
                         {/* Left text */}
                         <div className="min-w-0">
-                            <p className="text-lg font-semibold text-gray-900">dfgdg6</p>
+                            <p className="text-base font-semibold">Current Residence Proof</p>
                             <p className="text-sm text-gray-400 truncate">
                                 {file ? file.name : "Upload JPG or PNG"}
                             </p>

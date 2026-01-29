@@ -3,6 +3,7 @@ import Header from '../component/Header';
 import LoanQuote from '../component/LoanQuote';
 import PersonalDetails from '../component/PersonalDetails';
 import Documents from '../component/Documents';
+import BankDetails from '../component/BankDetails';
 
 
 export default function LoanApplication() {
@@ -25,12 +26,12 @@ export default function LoanApplication() {
             shortdis: 'Please enter your PAN Card number. Your identity is secure with us.',
             content: <Documents/>
         },
-        // {
-        //     id: 4,
-        //     stepname: "Bank Details",
-        //     shortdis: 'Please enter your PAN Card number. Your identity is secure with us.',
-        //     content: "Account & IFSC verification"
-        // },
+        {
+            id: 4,
+            stepname: "Bank Details",
+            shortdis: 'Please enter your PAN Card number. Your identity is secure with us.',
+            content: <BankDetails/>
+        },
 
     ];
 
@@ -40,7 +41,7 @@ export default function LoanApplication() {
         <>
 
             <div className='min-h-screen w-full bg-sky-100 '>
-                {/* <Header/> */}
+                <Header/>
 
                 <div className="max-w-7xl mx-auto gap-4 p-2 pt-10 rounded-md">
                     <div className="flex flex-col md:flex-row gap-5">
